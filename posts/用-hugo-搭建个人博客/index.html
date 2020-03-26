@@ -26,22 +26,43 @@
     
     
     <meta property="og:title" content="用 Hugo 搭建个人博客" />
-<meta property="og:description" content="博客开通了 基于 Hugo 搭建个人博客" />
+<meta property="og:description" content="Quick Start  本文是在 macOS 系统环境上安装 Hugo 的教程
+ Step 1: 安装 Hugo 使用 Homebrew macOS 下的包管理工具下载安装
+brew install hugo 安装完成后，进行验证
+hogo version Step 2: 新建网站 这一步去你的 GitHub 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。
+hugo new site yourname.github.io-creator 执行完后，会将网站下载下载到本地目录。
+Step 3: 添加主题 cd yourname.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题加入站点配置文件中
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml Step 4: 添加博客文章 hugo new posts/my-first-post.md 默认会在 content/posts 下生成博客草稿，像这样：
+将要发布时将 draft 设置为 false" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/%E7%94%A8-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
 <meta property="article:published_time" content="2020-03-26T05:00:43+08:00" />
 <meta property="article:modified_time" content="2020-03-26T05:00:43+08:00" />
 <meta itemprop="name" content="用 Hugo 搭建个人博客">
-<meta itemprop="description" content="博客开通了 基于 Hugo 搭建个人博客">
+<meta itemprop="description" content="Quick Start  本文是在 macOS 系统环境上安装 Hugo 的教程
+ Step 1: 安装 Hugo 使用 Homebrew macOS 下的包管理工具下载安装
+brew install hugo 安装完成后，进行验证
+hogo version Step 2: 新建网站 这一步去你的 GitHub 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。
+hugo new site yourname.github.io-creator 执行完后，会将网站下载下载到本地目录。
+Step 3: 添加主题 cd yourname.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题加入站点配置文件中
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml Step 4: 添加博客文章 hugo new posts/my-first-post.md 默认会在 content/posts 下生成博客草稿，像这样：
+将要发布时将 draft 设置为 false">
 <meta itemprop="datePublished" content="2020-03-26T05:00:43&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-26T05:00:43&#43;08:00" />
-<meta itemprop="wordCount" content="4">
+<meta itemprop="wordCount" content="132">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="用 Hugo 搭建个人博客"/>
-<meta name="twitter:description" content="博客开通了 基于 Hugo 搭建个人博客"/>
+<meta name="twitter:description" content="Quick Start  本文是在 macOS 系统环境上安装 Hugo 的教程
+ Step 1: 安装 Hugo 使用 Homebrew macOS 下的包管理工具下载安装
+brew install hugo 安装完成后，进行验证
+hogo version Step 2: 新建网站 这一步去你的 GitHub 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。
+hugo new site yourname.github.io-creator 执行完后，会将网站下载下载到本地目录。
+Step 3: 添加主题 cd yourname.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题加入站点配置文件中
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml Step 4: 添加博客文章 hugo new posts/my-first-post.md 默认会在 content/posts 下生成博客草稿，像这样：
+将要发布时将 draft 设置为 false"/>
 
   </head>
 
@@ -132,9 +153,50 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="博客开通了">博客开通了</h1>
-<p>基于 Hugo 搭建个人博客</p>
-<ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p> </p>
+<h2 id="quick-start">Quick Start</h2>
+<blockquote>
+<p>本文是在 macOS 系统环境上安装 Hugo 的教程</p>
+</blockquote>
+<h2 id="step-1-安装-hugo">Step 1: 安装 Hugo</h2>
+<p>使用 <a href="brew.zh/index_zh-cn">Homebrew</a> macOS 下的包管理工具下载安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">brew install hugo
+</code></pre></div><p>安装完成后，进行验证</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">hogo version
+</code></pre></div><h2 id="step-2-新建网站">Step 2: 新建网站</h2>
+<p>这一步去你的 <a href="https://github.com">GitHub</a> 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">hugo new site yourname.github.io-creator
+</code></pre></div><p>执行完后，会将网站下载下载到本地目录。</p>
+<h2 id="step-3-添加主题">Step 3: 添加主题</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">cd yourname.github.io-creator
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 
+</code></pre></div><p>然后，将主题加入站点配置文件中</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">echo <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> &gt;&gt; config.toml
+</code></pre></div><h2 id="step-4-添加博客文章">Step 4: 添加博客文章</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">hugo new posts/my-first-post.md
+</code></pre></div><p>默认会在 <code>content/posts</code> 下生成博客草稿，像这样：</p>
+<p>将要发布时将 <code>draft</code> 设置为 <code>false</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Markdown" data-lang="Markdown">---
+title: &#34;My First Post&#34;
+date: 2019-03-26T08:47:11+01:00
+draft: true
+---
+
+
+</code></pre></div><h2 id="step-5-本地起一个-hugo-server">Step 5: 本地起一个 Hugo server</h2>
+<p>可以在本地服务器 <code>http://localhost:1313/</code> 上预览写好的博客</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">hugo server -D
+</code></pre></div><h2 id="step-6-个性化博客主题">Step 6: 个性化博客主题</h2>
+<p>用文本编辑器打开 <code>config.toml </code></p>
+<pre><code>baseURL = &quot;https://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+theme = &quot;ananke
+</code></pre><h2 id="step-7-生成博客网站">Step 7: 生成博客网站</h2>
+<p>博客网站会输出到 <code>./public</code> 目录下。最后将 <code>./public</code> 的文件上传到刚刚创建的 <code>yourname.github.io</code> 仓库中，上传完成后配置仓库的 GitHub Pages，是在 <code>Settings &gt; Options &gt; GitHub Pages</code> 中。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Shell" data-lang="Shell">hugo -D
+</code></pre></div><ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">

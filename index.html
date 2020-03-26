@@ -127,7 +127,14 @@
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          博客开通了 基于 Hugo 搭建个人博客
+          Quick Start  本文是在 macOS 系统环境上安装 Hugo 的教程
+ Step 1: 安装 Hugo 使用 Homebrew macOS 下的包管理工具下载安装
+brew install hugo 安装完成后，进行验证
+hogo version Step 2: 新建网站 这一步去你的 GitHub 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。
+hugo new site yourname.github.io-creator 执行完后，会将网站下载下载到本地目录。
+Step 3: 添加主题 cd yourname.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题加入站点配置文件中
+echo &#39;theme = &#34;ananke&#34;&#39; &gt;&gt; config.toml Step 4: 添加博客文章 hugo new posts/my-first-post.md 默认会在 content/posts 下生成博客草稿，像这样：
+将要发布时将 draft 设置为 false
         </div>
           <a href="/posts/%E7%94%A8-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         

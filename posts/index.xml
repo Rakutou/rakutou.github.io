@@ -17,7 +17,14 @@
       <pubDate>Thu, 26 Mar 2020 05:00:43 +0800</pubDate>
       
       <guid>/posts/%E7%94%A8-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>博客开通了 基于 Hugo 搭建个人博客</description>
+      <description>Quick Start  本文是在 macOS 系统环境上安装 Hugo 的教程
+ Step 1: 安装 Hugo 使用 Homebrew macOS 下的包管理工具下载安装
+brew install hugo 安装完成后，进行验证
+hogo version Step 2: 新建网站 这一步去你的 GitHub 下新建一个名为 yourname.github.io 形式的 repo，yourname 是你 Git 账号的名称。
+hugo new site yourname.github.io-creator 执行完后，会将网站下载下载到本地目录。
+Step 3: 添加主题 cd yourname.github.io-creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题加入站点配置文件中
+echo &amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39; &amp;gt;&amp;gt; config.toml Step 4: 添加博客文章 hugo new posts/my-first-post.md 默认会在 content/posts 下生成博客草稿，像这样：
+将要发布时将 draft 设置为 false</description>
     </item>
     
   </channel>
